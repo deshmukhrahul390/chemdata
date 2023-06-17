@@ -197,7 +197,7 @@ if($userrole=="admin")
                 </ul>
               </li>
 
-              <a href="manageorders.php" class="nav-link"><i data-feather="shopping-cart"></i><span> Create TC</span></a></li>
+              <a href="manageorders.php" class="nav-link"><i data-feather="plus-square"></i><span> Create TC</span></a></li>
              
 
               <!-- <li class="dropdown">

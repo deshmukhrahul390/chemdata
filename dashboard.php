@@ -151,6 +151,107 @@ $today=date('Y-m-d');
           </div>
         
 
+
+
+<hr>
+
+          
+      <table class="table table-striped table-hover" id="tableExport" style="width:100%;">
+        <thead>
+          <tr>
+
+            <th>#</th>
+            <th>Item code</th>
+            <th>Category</th>
+            <th>BO/IH</th>
+            <th>Basic Material</th>
+            <th>Drg.No</th>
+            <th>Length</th>
+            <th>Dia</th>
+            <th>Gross Wt.</th>
+            <th>Net Wt.</th>
+            <th>Child Code</th>
+            <th>Action</th>
+
+          </tr>
+        </thead>
+        <tbody>
+
+        <tr>
+          <td>1</td>
+          <td>SS31600</td>
+          <td>Category name</td>
+          <td>Bo</td>
+          <td>Chemicals</td>
+          <td>0099</td>
+          <td>2.1mm</td>
+          <td>4.1</td>
+          <td>1.2gm</td>
+          <td>0.9gm</td>
+          <td>EN24-7.5</td>
+          <td>
+              <button class="btn btn-primary">Edit</button>
+              <button class="btn btn-warning"><i class="fas fa-eye"></i></button>
+              <button class="btn btn-danger">X</button>
+          </td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>SS3160</td>
+          <td>Category name</td>
+          <td>IH</td>
+          <td>MECH</td>
+          <td>0099</td>
+          <td>2.1mm</td>
+          <td>4.1</td>
+          <td>1.2gm</td>
+          <td>0.9gm</td>
+          <td>EN24-7.5</td>
+          <td>
+              <button class="btn btn-primary">Edit</button>
+              <button class="btn btn-warning"><i class="fas fa-eye"></i></button>
+              <button class="btn btn-danger">X</button>
+          </td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>SS31670</td>
+          <td>Category name</td>
+          <td>Bo</td>
+          <td>Chemicals</td>
+          <td>0099</td>
+          <td>2.1mm</td>
+          <td>4.1</td>
+          <td>1.2gm</td>
+          <td>0.9gm</td>
+          <td>EN24-7.5</td>
+          <td>
+              <button class="btn btn-primary">Edit</button>
+              <button class="btn btn-warning"><i class="fas fa-eye"></i></button>
+              <button class="btn btn-danger">X</button>
+          </td>
+        </tr>
+        <tr>
+          <td>4</td>
+          <td>SS31600</td>
+          <td>Category name</td>
+          <td>IH</td>
+          <td>MECH</td>
+          <td>0099</td>
+          <td>2.1mm</td>
+          <td>4.1</td>
+          <td>1.2gm</td>
+          <td>0.9gm</td>
+          <td>EN24-7.5</td>
+          <td>
+              <button class="btn btn-primary">Edit</button>
+              <button class="btn btn-warning"><i class="fas fa-eye"></i></button>
+              <button class="btn btn-danger">X</button>
+          </td>
+        </tr>
+        
+        </tbody>
+      </table>
           
                   </div>
                 </div>

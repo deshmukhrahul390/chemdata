@@ -28,7 +28,7 @@ function getchem_mechID($con,$id)
 function getgradenamebyID($con,$id)
 {
     $selectquery = "SELECT * FROM `grademaster` where `Gradeid`='$id'";
-      echo $selectquery;
+      // echo $selectquery;
    $result = mysqli_query($con, $selectquery);
    $row = mysqli_fetch_assoc($result);
    $GradeName=$row['GradeName'];

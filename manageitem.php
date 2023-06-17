@@ -6,7 +6,7 @@ $query1 = "SELECT * FROM gradediameteruniquecode";
 $result1 = mysqli_query($con, $query1);
 $uniquecode='<option value="">--- Select Code ---</option>';
 while ($row1 = mysqli_fetch_assoc($result1)) {
-    $uniquecode.='<option value="' . $row1['Grade'] . '">' .$row1['uniquecode']." / ".getgradenamebyID($con,$row1['Grade']).'-'.$row1['diameter']. '</option>';
+    $uniquecode.='<option value="' . $row1['grade'] . '">' .$row1['uniquecode']." / ".getgradenamebyID($con,$row1['grade']).'-'.$row1['diameter']. '</option>';
 }
 
 
@@ -32,9 +32,16 @@ while ($row1 = mysqli_fetch_assoc($result1)) {
           <tr>
 
             <th>#</th>
-            <th>Category Name</th>
-            <th>Type Name</th>
-            <th>Action</th>
+            <th>Item code</th>
+            <th>Category</th>
+            <th>BO/IH</th>
+            <th>Basic Material</th>
+            <th>Drg.No</th>
+            <th>Length</th>
+            <th>Dia</th>
+            <th>Gross Wt.</th>
+            <th>Net Wt.</th>
+            <th>Child Code</th>
           </tr>
         </thead>
         <tbody>
@@ -50,13 +57,13 @@ if(mysqli_num_rows($res)>0)
 		while($row=mysqli_fetch_array($res))
     {?>
         <tr>
-          <td><?php echo $num; ?></td>
+          <!-- <td><?php //echo $num; ?></td>
           
-          <td><?php echo $row['Name']; ?></td>
-          <td><?php echo $row['Type']; ?></td>
+          <td><?php //echo $row['Name']; ?></td>
+          <td><?php //echo $row['Type']; ?></td>
           <td>
             <button class="btn btn-warning" onclick="getdata(<?php echo $row['ChemMechId']; ?>)"><i data-feather="edit"></i></button>
-            &nbsp<button class="mt-1 btn btn-danger" onclick="deletedata(<?php echo $row['ChemMechId']; ?>)">X</button></td>
+            &nbsp<button class="mt-1 btn btn-danger" onclick="deletedata(<?php echo $row['ChemMechId']; ?>)">X</button></td> -->
         </tr>
     <?php 
     $num++;
@@ -134,6 +141,7 @@ if(mysqli_num_rows($res)>0)
                  <select name="" id="compotype" class="form-control">
                  <?php echo $uniquecode;  ?>
                  </select>
+                 <small>UniqueNo / Grade - Diameter</small>
                 </form>
               </div>
               <div class="modal-footer bg-whitesmoke br">
